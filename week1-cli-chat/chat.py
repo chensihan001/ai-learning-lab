@@ -44,7 +44,8 @@ def load_dotenv(path: str = ".env") -> None:
     """极简 .env 解析，避免为了读 3 个变量引入 python-dotenv。"""
     if not os.path.exists(path):
         return
-    with open(path, encoding="utf-8") as f:
+    # utf-8-sig：用记事本保存的 .env 会带 BOM，不剥掉第一个变量名就变成 "\ufeffOPENAI_API_KEY"
+    with open(path, encoding="utf-8-sig") as f:
         for line in f:
             line = line.strip()
             if not line or line.startswith("#") or "=" not in line:
