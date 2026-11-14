@@ -1,0 +1,25 @@
+# 密钥——这一条最重要
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# 数据/模型/大文件（RAG 阶段会用到）
+data/
+*.faiss
+*.index
+*.bin
+*.safetensors
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
