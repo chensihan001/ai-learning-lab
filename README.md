@@ -10,7 +10,7 @@ AI 应用开发实习冲刺：每周一个可运行的产出，从零手写，�
 |---|---|---|---|
 | W1 | [week1-cli-chat](week1-cli-chat/) | 命令行聊天客户端：流式输出 / 多轮上下文 / 历史预算截断 | ✅ |
 | W2 | [week2-attention](week2-attention/) | 用 numpy 手写 self-attention：循环版 vs 矩阵版，数值等价 + 性能对比 | ✅ |
-| W3-4 | [week3-rag](week3-rag/) | 检索增强问答：切块 / BM25 检索 / 拼 prompt / 评测集 | 🚧 |
+| W3-4 | [week3-rag](week3-rag/) | 检索增强问答：切块 / BM25 检索 / 带引用回答（评测集与向量检索进行中） | 🚧 |
 | W5-6 | mini-agent | 手写 ReAct 循环 + 工具调用 + 记忆 | ⬜ |
 | W7 | week7-lora | LLaMA-Factory + Qwen 微调，LoRA rank 对比实验 | ⬜ |
 
